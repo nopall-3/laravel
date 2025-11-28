@@ -29,7 +29,7 @@ class ScheduleExport implements FromCollection, WithHeadings, WithMapping
             ++$this->key,
             $schedule->cinema->name,
             $schedule->movie->title,
-              'Rp ' . number_format($schedule->price, 0, ',', '.'), 
+              'Rp ' . number_format($schedule->price, 0, ',', '.'),
             json_encode($schedule->hours),
         ];
     }

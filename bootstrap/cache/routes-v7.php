@@ -32,7 +32,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::lR7LSmllCLBiDOLE',
+            '_route' => 'generated::5dA1OZLpd9ColytD',
           ),
           1 => NULL,
           2 => 
@@ -52,7 +52,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::p0ztUa6cbLX78tnt',
+            '_route' => 'generated::ZhMNxR8qwUUoq0RB',
           ),
           1 => NULL,
           2 => 
@@ -91,7 +91,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::NuWQxvjiToIo5Mvd',
+            '_route' => 'generated::T3HJvrSb1k7pkrcS',
           ),
           1 => NULL,
           2 => 
@@ -148,6 +148,23 @@ app('router')->setCompiledRoutes(
       '/tickets' => 
       array (
         0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'tickets.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
         array (
           0 => 
           array (
@@ -271,6 +288,26 @@ app('router')->setCompiledRoutes(
           2 => 
           array (
             'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/tickets/chart' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.tickets.chart',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
           ),
           3 => NULL,
           4 => false,
@@ -523,6 +560,26 @@ app('router')->setCompiledRoutes(
           0 => 
           array (
             '_route' => 'admin.staff.datatables',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/movies/chart' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.movie.chart',
           ),
           1 => NULL,
           2 => 
@@ -916,7 +973,7 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/livewire/preview\\-file/([^/]++)(*:39)|/s(?|chedules/(?|detail/([^/]++)(*:78)|([^/]++)/hours/([^/]++)(*:108))|t(?|aff/(?|promos/(?|edit/([^/]++)(*:151)|update/([^/]++)(*:174)|delete(?|/([^/]++)(*:200)|\\-permanent/([^/]++)(*:228))|restore/([^/]++)(*:253))|schedule/(?|edit/([^/]++)(*:287)|update/([^/]++)(*:310)|delete(?|/([^/]++)(*:336)|\\-permanent/([^/]++)(*:364))|restore/([^/]++)(*:389)))|orage/(.*)(*:409)))|/tickets/([^/]++)/(?|order(*:445)|payment(*:460))|/admin/(?|cinemas/(?|edit/([^/]++)(*:503)|update/([^/]++)(*:526)|delete(?|/([^/]++)(*:552)|\\-permanent/([^/]++)(*:580))|restore/([^/]++)(*:605))|staff/(?|edit/([^/]++)(*:636)|update/([^/]++)(*:659)|delete(?|/([^/]++)(*:685)|\\-permanent/([^/]++)(*:713))|restore/([^/]++)(*:738))|movies/(?|edit/([^/]++)(*:770)|update/([^/]++)(*:793)|delete(?|/([^/]++)(*:819)|\\-permanent/([^/]++)(*:847))|nonaktif/([^/]++)(*:873)|restore/([^/]++)(*:897)))|/cinemas/([^/]++)/schedules(*:934))/?$}sDu',
+      0 => '{^(?|/livewire/preview\\-file/([^/]++)(*:39)|/s(?|chedules/(?|detail/([^/]++)(*:78)|([^/]++)/hours/([^/]++)(*:108))|t(?|aff/(?|promos/(?|edit/([^/]++)(*:151)|update/([^/]++)(*:174)|delete(?|/([^/]++)(*:200)|\\-permanent/([^/]++)(*:228))|restore/([^/]++)(*:253))|schedule/(?|edit/([^/]++)(*:287)|update/([^/]++)(*:310)|delete(?|/([^/]++)(*:336)|\\-permanent/([^/]++)(*:364))|restore/([^/]++)(*:389)))|orage/(.*)(*:409)))|/tickets/([^/]++)/(?|order(*:445)|p(?|ayment(?|(*:466)|/(?|status(*:484)|proof(*:497)))|df(*:509)))|/admin/(?|cinemas/(?|edit/([^/]++)(*:553)|update/([^/]++)(*:576)|delete(?|/([^/]++)(*:602)|\\-permanent/([^/]++)(*:630))|restore/([^/]++)(*:655))|staff/(?|edit/([^/]++)(*:686)|update/([^/]++)(*:709)|delete(?|/([^/]++)(*:735)|\\-permanent/([^/]++)(*:763))|restore/([^/]++)(*:788))|movies/(?|edit/([^/]++)(*:820)|update/([^/]++)(*:843)|delete(?|/([^/]++)(*:869)|\\-permanent/([^/]++)(*:897))|nonaktif/([^/]++)(*:923)|restore/([^/]++)(*:947)))|/cinemas/([^/]++)/schedules(*:984))/?$}sDu',
     ),
     3 => 
     array (
@@ -1258,7 +1315,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      460 => 
+      466 => 
       array (
         0 => 
         array (
@@ -1281,7 +1338,75 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      503 => 
+      484 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'tickets.payment.status',
+          ),
+          1 => 
+          array (
+            0 => 'ticketId',
+          ),
+          2 => 
+          array (
+            'PATCH' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      497 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'tickets.payment.proof',
+          ),
+          1 => 
+          array (
+            0 => 'ticketId',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      509 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'tickets.export_pdf',
+          ),
+          1 => 
+          array (
+            0 => 'ticketId',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      553 => 
       array (
         0 => 
         array (
@@ -1304,7 +1429,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      526 => 
+      576 => 
       array (
         0 => 
         array (
@@ -1326,7 +1451,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      552 => 
+      602 => 
       array (
         0 => 
         array (
@@ -1348,7 +1473,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      580 => 
+      630 => 
       array (
         0 => 
         array (
@@ -1370,7 +1495,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      605 => 
+      655 => 
       array (
         0 => 
         array (
@@ -1392,7 +1517,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      636 => 
+      686 => 
       array (
         0 => 
         array (
@@ -1415,7 +1540,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      659 => 
+      709 => 
       array (
         0 => 
         array (
@@ -1437,7 +1562,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      685 => 
+      735 => 
       array (
         0 => 
         array (
@@ -1459,7 +1584,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      713 => 
+      763 => 
       array (
         0 => 
         array (
@@ -1481,7 +1606,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      738 => 
+      788 => 
       array (
         0 => 
         array (
@@ -1503,7 +1628,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      770 => 
+      820 => 
       array (
         0 => 
         array (
@@ -1526,7 +1651,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      793 => 
+      843 => 
       array (
         0 => 
         array (
@@ -1548,7 +1673,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      819 => 
+      869 => 
       array (
         0 => 
         array (
@@ -1570,7 +1695,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      847 => 
+      897 => 
       array (
         0 => 
         array (
@@ -1592,7 +1717,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      873 => 
+      923 => 
       array (
         0 => 
         array (
@@ -1614,7 +1739,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      897 => 
+      947 => 
       array (
         0 => 
         array (
@@ -1636,7 +1761,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      934 => 
+      984 => 
       array (
         0 => 
         array (
@@ -1705,7 +1830,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::lR7LSmllCLBiDOLE' => 
+    'generated::5dA1OZLpd9ColytD' => 
     array (
       'methods' => 
       array (
@@ -1717,7 +1842,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@returnJavaScriptAsFile',
         'controller' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@returnJavaScriptAsFile',
-        'as' => 'generated::lR7LSmllCLBiDOLE',
+        'as' => 'generated::5dA1OZLpd9ColytD',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1733,7 +1858,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::p0ztUa6cbLX78tnt' => 
+    'generated::ZhMNxR8qwUUoq0RB' => 
     array (
       'methods' => 
       array (
@@ -1745,7 +1870,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@maps',
         'controller' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@maps',
-        'as' => 'generated::p0ztUa6cbLX78tnt',
+        'as' => 'generated::ZhMNxR8qwUUoq0RB',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1816,7 +1941,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::NuWQxvjiToIo5Mvd' => 
+    'generated::T3HJvrSb1k7pkrcS' => 
     array (
       'methods' => 
       array (
@@ -1844,8 +1969,8 @@ app('router')->setCompiledRoutes(
                     return response(\\Illuminate\\Support\\Facades\\View::file(\'C:\\\\laragon\\\\www\\\\tixid\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\', [
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
-                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000007580000000000000000";}}',
-        'as' => 'generated::NuWQxvjiToIo5Mvd',
+                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000007640000000000000000";}}',
+        'as' => 'generated::T3HJvrSb1k7pkrcS',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2011,6 +2136,44 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'tickets.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'tickets',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'isUser',
+        ),
+        'uses' => 'App\\Http\\Controllers\\TicketController@index',
+        'controller' => 'App\\Http\\Controllers\\TicketController@index',
+        'as' => 'tickets.index',
+        'namespace' => NULL,
+        'prefix' => '/tickets',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'tickets.store' => 
     array (
       'methods' => 
@@ -2161,6 +2324,119 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'tickets.payment.status' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PATCH',
+      ),
+      'uri' => 'tickets/{ticketId}/payment/status',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'isUser',
+        ),
+        'uses' => 'App\\Http\\Controllers\\TicketController@updateStatusPayment',
+        'controller' => 'App\\Http\\Controllers\\TicketController@updateStatusPayment',
+        'as' => 'tickets.payment.status',
+        'namespace' => NULL,
+        'prefix' => '/tickets',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'tickets.payment.proof' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'tickets/{ticketId}/payment/proof',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'isUser',
+        ),
+        'uses' => 'App\\Http\\Controllers\\TicketController@proofPayment',
+        'controller' => 'App\\Http\\Controllers\\TicketController@proofPayment',
+        'as' => 'tickets.payment.proof',
+        'namespace' => NULL,
+        'prefix' => '/tickets',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'tickets.export_pdf' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'tickets/{ticketId}/pdf',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'isUser',
+        ),
+        'uses' => 'App\\Http\\Controllers\\TicketController@exportPdf',
+        'controller' => 'App\\Http\\Controllers\\TicketController@exportPdf',
+        'as' => 'tickets.export_pdf',
+        'namespace' => NULL,
+        'prefix' => '/tickets',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'logout' => 
     array (
       'methods' => 
@@ -2215,7 +2491,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:55:"function () {
         return \\view(\'auth.login\');
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000007630000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000000076f0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -2254,7 +2530,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:56:"function () {
         return \\view(\'auth.signup\');
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000007690000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000007790000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -2350,6 +2626,44 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'admin.tickets.chart' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/tickets/chart',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'isAdmin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\TicketController@chart',
+        'controller' => 'App\\Http\\Controllers\\TicketController@chart',
+        'as' => 'admin.tickets.chart',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'admin.dashboard' => 
     array (
       'methods' => 
@@ -2367,7 +2681,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:60:"function () {
         return \\view(\'admin.dashboard\');
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000000076d0000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000000077e0000000000000000";}}',
         'as' => 'admin.dashboard',
         'namespace' => NULL,
         'prefix' => '/admin',
@@ -3215,6 +3529,44 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'admin.movie.chart' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/movies/chart',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'isAdmin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\MovieController@chart',
+        'controller' => 'App\\Http\\Controllers\\MovieController@chart',
+        'as' => 'admin.movie.chart',
+        'namespace' => NULL,
+        'prefix' => 'admin/movies',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'admin.movie.index' => 
     array (
       'methods' => 
@@ -3682,7 +4034,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:60:"function () {
         return \\view(\'staff.dashboard\');
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000000076f0000000000000000";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000007800000000000000000";}}',
         'as' => 'staff.dashboard',
         'namespace' => NULL,
         'prefix' => '/staff',
@@ -4582,7 +4934,7 @@ app('router')->setCompiledRoutes(
                         $config,
                         $isProduction
                     ))($request, $path);
-                }";s:5:"scope";s:47:"Illuminate\\Filesystem\\FilesystemServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000007930000000000000000";}}',
+                }";s:5:"scope";s:47:"Illuminate\\Filesystem\\FilesystemServiceProvider";s:4:"this";N;s:4:"self";s:32:"00000000000007a50000000000000000";}}',
         'as' => 'storage.local',
       ),
       'fallback' => false,

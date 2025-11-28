@@ -30,18 +30,34 @@
                 $rows = range('A', 'H');
                 $cols = range(1, 18);
             @endphp
+            <!-- looping A-H ke bawah -->
             @foreach ($rows as $row)
+                <!-- bikin looping 1-18 ditiap huruf A-H ke samping (d-flex) -->
                 <div class="d-flex justify-content-center">
-
                     @foreach ($cols as $col)
+                        <!-- jika kursi no 7 kasi kotak kosong untuk jalan -->
                         @if ($col == 7)
                             <div style="width: 50px"></div>
                         @endif
-                        <div style="background: #112646; color: white; width: 40px; height: 38px;
-                         margin: 5px; border-radius: 5px; text-align:center; padding-top: 4px; cursor: pointer;"
-                            onclick="selectSeat('{{ $schedule->price }}', '{{ $row }}', '{{ $col }}', this)">
-                            <small><b>{{ $row }}-{{ $col }}</b></small>
-                        </div>
+                        @php
+                            $seat = $row . '-' . $col;
+                        @endphp
+                        {{--  cek apakah di array $seatsFormat ada data kursi ini : in_array() --}}
+                        @if (in_array($seat, $seatsFormat))
+                            <div
+                                style="background: #eaeaea; color: rgb(0, 0, 0); width: 40px; height: 35px; margin:5px;
+                     border-radius: 5px; text-align:center; padding-top: 3px;">
+                                <small><b>{{ $row }}-{{ $col }}</b></small>
+                            </div>
+                        @else
+                            <!-- bikin style kotak no kursi -->
+                            <div style="background: #112646; color: white; width: 40px; height: 35px; margin:5px;
+                     border-radius: 5px; text-align:center; padding-top: 3px; cursor: pointer"
+                                onclick="selectSeat('{{ $schedule->price }}',
+                     '{{ $row }}', '{{ $col }}', this)">
+                                <small><b>{{ $row }}-{{ $col }}</b></small>
+                            </div>
+                        @endif
                     @endforeach
                 </div>
             @endforeach
@@ -108,27 +124,26 @@
         function createOrder() {
             let data = {
                 user_id: $("#user_id").val(),
-                schedule_id : $("#schedule_id").val(),
+                schedule_id: $("#schedule_id").val(),
                 rows_of_seats: seats,
-                quantity : seats.length,
+                quantity: seats.length,
                 total_price: totalPrice,
                 tax: 4000 * seats.length,
                 hour: $("#hour").val(),
-                _token: "{{csrf_token() }}",
+                _token: "{{ csrf_token() }}",
             }
 
             $.ajax({
                 url: "{{ route('tickets.store') }}",
                 method: "POST",
                 data: data,
-                success: function(response)
-                {
+                success: function(response) {
                     // console.log(response);
                     let ticketId = response.data.id;
                     // pindaj hala,am
                     window.location.href = `/tickets/${ticketId}/order`;
                 },
-                error: function(message){
+                error: function(message) {
                     alert('gagal membuat data tiket');
                 }
 

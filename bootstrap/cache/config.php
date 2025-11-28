@@ -764,6 +764,61 @@
     'same_site' => 'lax',
     'partitioned' => false,
   ),
+  'dompdf' => 
+  array (
+    'show_warnings' => false,
+    'public_path' => NULL,
+    'convert_entities' => true,
+    'options' => 
+    array (
+      'font_dir' => 'C:\\laragon\\www\\tixid\\storage\\fonts',
+      'font_cache' => 'C:\\laragon\\www\\tixid\\storage\\fonts',
+      'temp_dir' => 'C:\\Users\\user\\AppData\\Local\\Temp',
+      'chroot' => 'C:\\laragon\\www\\tixid',
+      'allowed_protocols' => 
+      array (
+        'data://' => 
+        array (
+          'rules' => 
+          array (
+          ),
+        ),
+        'file://' => 
+        array (
+          'rules' => 
+          array (
+          ),
+        ),
+        'http://' => 
+        array (
+          'rules' => 
+          array (
+          ),
+        ),
+        'https://' => 
+        array (
+          'rules' => 
+          array (
+          ),
+        ),
+      ),
+      'artifactPathValidation' => NULL,
+      'log_output_file' => NULL,
+      'enable_font_subsetting' => false,
+      'pdf_backend' => 'CPDF',
+      'default_media_type' => 'screen',
+      'default_paper_size' => 'a4',
+      'default_paper_orientation' => 'portrait',
+      'default_font' => 'serif',
+      'dpi' => 96,
+      'enable_php' => false,
+      'enable_javascript' => true,
+      'enable_remote' => false,
+      'allowed_remote_hosts' => NULL,
+      'font_height_ratio' => 1.1,
+      'enable_html5_parser' => true,
+    ),
+  ),
   'livewire' => 
   array (
     'class_namespace' => 'App\\Livewire',
